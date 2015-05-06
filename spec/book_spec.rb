@@ -23,13 +23,13 @@ describe(Book) do
     end
   end
 
-  describe('#all') do
+  describe ('.all_books') do
     it('will return empty at first') do
-      expect(Book.all()).to(eq([]))
+      expect(Book.all_books()).to(eq([]))
     end
   end
 
-  
+
 
 
 
