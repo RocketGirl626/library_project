@@ -61,7 +61,7 @@ describe(Patron) do
     it('lets you delete a patron from the database') do
       test_patron = Patron.new({:name => 'Jon Galt', :id => nil})
       test_patron.save()
-      test_patron2 = Book.new({:name => 'Jon Galt', :id => nil})
+      test_patron2 = Patron.new({:name => 'Jon Galt', :id => nil})
       test_patron2.save()
       test_patron.delete()
       expect(Patron.all_patrons()).to(eq([test_patron2]))
